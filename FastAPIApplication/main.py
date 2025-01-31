@@ -29,7 +29,7 @@ The application allows users to:
 """
 
 app = FastAPI(
-    title="QA AI Application",
+    title="FastAPI-LangChain-QA-Manager",
     description=APP_DESCRIPTION,
     version="0.0.1"
 )
