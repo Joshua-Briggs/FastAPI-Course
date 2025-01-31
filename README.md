@@ -1,13 +1,13 @@
 A modern web application built with FastAPI that combines AI-powered question answering with a PostgreSQL database backend.
 
-Key Features:
+Key Features: 🚀🚀🚀
 - RESTful API endpoints built with FastAPI for high performance and async support
 - PostgreSQL database integration using SQLAlchemy ORM
 - AI-powered question answering using LangChain and OpenAI's GPT models
 - CRUD operations for managing questions and answers
 - Automatic API documentation with OpenAPI/Swagger UI
 
-Tech Stack:
+Tech Stack: 🖥️🖱️
 - FastAPI: Modern, fast web framework for building APIs
 - PostgreSQL: Robust relational database for data persistence
 - SQLAlchemy: Powerful SQL toolkit and ORM for Python
@@ -15,7 +15,7 @@ Tech Stack:
 - OpenAI: State-of-the-art GPT models for natural language processing
 - Pydantic: Data validation using Python type annotations
 
-The application allows users to:
+The application allows users to: 🪐🍀
 1. Create and manage questions and answers
 2. Generate AI-powered responses using OpenAI's language models
 3. Store and retrieve QA pairs from a PostgreSQL database
