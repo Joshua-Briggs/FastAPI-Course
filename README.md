@@ -57,6 +57,7 @@ The application enables users to:
 4. View API documentation:
    - Open your browser and go to `http://127.0.0.1:8000/docs`
    - Interactive Swagger UI will be available for testing endpoints
+   - Inside the `caller.ipynb` you can also call endpoints through the local session
 
 ---
 
