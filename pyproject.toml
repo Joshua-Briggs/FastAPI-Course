@@ -1,9 +1,9 @@
 [project]
 name = "FastAPIApplication"
 version = "0.0.1"
-description = ""
+description = "Combines the FastAPI endpoints with status codes, get, put, create and delete requests, uses pydantic validation alongside langchain questioning and answering from a PostGres database"
 authors = [
-    {name = "Aurelio AI"}
+    {name = "Joshua Briggs"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
