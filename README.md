@@ -1,12 +1,12 @@
-> TO GET THIS APPLICATION RUNNING:
+> TO GET THIS APPLICATION RUNNING: 🏃‍♂️🏃‍♀️
 
 --------------------------------------------------------------------------------------------------------
 
--> DOWNLOAD AND REGISTER SERVER ON POSTGRES
+-> DOWNLOAD AND REGISTER SERVER ON POSTGRES 
 
 --------------------------------------------------------------------------------------------------------
 
---> IMPLEMENT POSTGRES SERVER ONTO 'database.py' FILE
+--> IMPLEMENT POSTGRES SERVER ONTO 'database.py' FILE 
 
 --------------------------------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@
 
 --------------------------------------------------------------------------------------------------------
 
-----> IMPORT ALL DIRECTORIES FROM PYPROJECT
+----> IMPORT ALL DIRECTORIES FROM PYPROJECT 
 
 --------------------------------------------------------------------------------------------------------
 
@@ -22,10 +22,10 @@
 
 --------------------------------------------------------------------------------------------------------
 
-------> ONCE IN CORRECT LOCATION TYPE 'UVICORN MAIN:APP --RELOAD'
+------> ONCE IN CORRECT LOCATION TYPE 'uvicorn main:app --reload'
 
 --------------------------------------------------------------------------------------------------------
 
--------> IF THE SERVER IS RUNNING GO TO 'http://127.0.0.1:8000/docs' TO VIEW ENDPOINTS
+-------> IF THE SERVER IS RUNNING GO TO 'http://127.0.0.1:8000/docs' TO VIEW ENDPOINTS 🎥
 
 --------------------------------------------------------------------------------------------------------
