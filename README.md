@@ -6,22 +6,26 @@
 
 --------------------------------------------------------------------------------------------------------
 
---> IMPLEMENT POSTGRES SERVER ONTO DATABASE.PY FILE
+--> IMPLEMENT POSTGRES SERVER ONTO 'database.py' FILE
 
 --------------------------------------------------------------------------------------------------------
 
----> IMPORT ALL DIRECTORIES FROM PYPROJECT
+---> CREATE AN OPENAI API KEY AND ADD IT INSIDE THE 'langchain_answers.py' file 
 
 --------------------------------------------------------------------------------------------------------
 
-----> CD TO 'FastAPIApplication' DIRECTORY
+----> IMPORT ALL DIRECTORIES FROM PYPROJECT
 
 --------------------------------------------------------------------------------------------------------
 
------> ONCE IN CORRECT LOCATION TYPE 'UVICORN MAIN:APP --RELOAD'
+-----> CD TO 'FastAPIApplication' DIRECTORY
 
 --------------------------------------------------------------------------------------------------------
 
-------> IF THE SERVER IS RUNNING GO TO 'http://127.0.0.1:8000/docs' TO VIEW ENDPOINTS
+------> ONCE IN CORRECT LOCATION TYPE 'UVICORN MAIN:APP --RELOAD'
+
+--------------------------------------------------------------------------------------------------------
+
+-------> IF THE SERVER IS RUNNING GO TO 'http://127.0.0.1:8000/docs' TO VIEW ENDPOINTS
 
 --------------------------------------------------------------------------------------------------------
