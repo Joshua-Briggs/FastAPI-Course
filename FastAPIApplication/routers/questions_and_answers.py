@@ -1,21 +1,11 @@
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Path, status
-from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from ..database import session_local
-from ..models import QAA
-
-# OpenAI configuration
-OPENAI_API_KEY = ""
-
-llm = ChatOpenAI(
-    model_name="gpt-4",
-    temperature=0.0,
-    openai_api_key=OPENAI_API_KEY
-)
+from database import session_local
+from models import QAA
 
 router = APIRouter(prefix='/qaa', tags=['qaa'])
 # creating our own "sub-application" and using a unique 
@@ -168,22 +158,3 @@ async def delete_all_qaa(db: db_dependency):
     db.commit()
     return None
 # this function has a "delete" endpoint, this means the function should remove data
-
-@router.put("/{qaa_id}/ai-answer", status_code=status.HTTP_200_OK)
-async def get_ai_answer(db: db_dependency, qaa_id: int = Path(gt=0)):
-    qaa = db.query(QAA).filter(QAA.id == qaa_id).first()
-    if qaa is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Question and answer not found')
-    
-    # Get AI response
-    result = llm.invoke(qaa.question)
-    
-    # Extract the content from the AI message
-    answer_content = result.content
-    
-    # Update the answer in the database
-    qaa.answer = answer_content
-    db.commit()
-    
-    qaa = db.query(QAA).filter(QAA.id == qaa_id).first()
-    return qaa
